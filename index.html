@@ -10,31 +10,102 @@
 
     <!-- Latest compiled JavaScript -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="https://cdn.datatables.net/1.12.1/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/1.12.1/js/dataTables.bootstrap5.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.2.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.12.1/css/dataTables.bootstrap5.min.css">
 </head>
 <body>
     <div class="container">
         <div class="row">
             <div class="col-xl-3 col-md-4 col-sm-6">
                 <div class="d-grid">
-                    <button type="button" class="btn btn-primary btn-block">Full-Width Button</button>
+                    <button type="button" class="btn btn-primary btn-block">Nattaphon</button>
                 </div>
             </div>
             <div class="col-xl-3 col-md-4 col-sm-6">
                 <div class="d-grid">
-                    <button type="button" class="btn btn-danger btn-block">Full-Width Button</button>
+                    <button type="button" class="btn btn-danger btn-block">Nattaphon</button>
                 </div>
             </div>
             <div class="col-xl-3 col-md-4 col-sm-6">
                 <div class="d-grid">
-                    <button type="button" class="btn btn-warning btn-block">Full-Width Button</button>
+                    <button type="button" class="btn btn-warning btn-block">Nattaphon</button>
                 </div>
             </div>
             <div class="col-xl-3 col-md-4 col-sm-6">
                 <div class="d-grid">
-                    <button type="button" class="btn btn-success btn-block">Full-Width Button</button>
+                    <button type="button" class="btn btn-success btn-block">Nattaphon</button>
                 </div>
             </div>
         </div>
     </div>
+
+    <div class="container">
+        <div class="card">
+            <div class="card-header">
+                Header
+            </div>
+            <div class="body">
+                <table id="example" class="table table-striped" style="width:100%">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Position</th>
+                            <th>Office</th>
+                            <th>Age</th>
+                            <th>Start date</th>
+                            <th>Salary</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Tiger Nixon</td>
+                            <td>System Architect</td>
+                            <td>Edinburgh</td>
+                            <td>61</td>
+                            <td>2011-04-25</td>
+                            <td>$320,800</td>
+                        </tr>
+                        <tr>
+                            <td>Garrett Winters</td>
+                            <td>Accountant</td>
+                            <td>Tokyo</td>
+                            <td>63</td>
+                            <td>2011-07-25</td>
+                            <td>$170,750</td>
+                        </tr>
+                        <tr>
+                            <td>Ashton Cox</td>
+                            <td>Junior Technical Author</td>
+                            <td>San Francisco</td>
+                            <td>66</td>
+                            <td>2009-01-12</td>
+                            <td>$86,000</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <th>Name</th>
+                            <th>Position</th>
+                            <th>Office</th>
+                            <th>Age</th>
+                            <th>Start date</th>
+                            <th>Salary</th>
+                        </tr>
+                    </tfoot>
+                </table>
+            </div>
+            <div class="card-footer">
+                Footer
+            </div>
+        </div>
+    </div>
 </body>
+<script>
+    $(document).ready(function () {
+        $('#example').DataTable();
+    });
+</script>
 </html>
